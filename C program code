@@ -1,0 +1,46 @@
+Factorial of a given number by using Recursive function
+
+
+#include<stdio.h> 
+int fact(int n)
+{
+int f; 
+if((n==0)||(n==1)) 
+return(n); 
+else 
+f=n*fact(n-1); 
+return(f); 
+} 
+void main() 
+{ 
+int n; 
+printf("enter the number :"); 
+scanf("%d",&n); 
+printf("factoria of number%d",fact(n)); 
+} 
+
+
+Factorial of a given number by using Non-Recursive function
+
+
+
+#include<stdio.h> 
+int fact(int n) 
+{ 
+int f=1,i; 
+if((n==0)||(n==1)) 
+return(1); 
+else 
+{ 
+for(i=1;i<=n;i++) 
+f=f*i; 
+ } 
+return(f); 
+} 
+void main() 
+{ 
+int n; 
+printf("enter the number :"); 
+scanf("%d",&n); 
+printf("factoria of number%d",fact(n)); 
+} 
